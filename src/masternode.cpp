@@ -17,6 +17,7 @@ map<uint256, int> mapSeenMasternodeScanningErrors;
 // cache block hashes as we calculate them
 std::map<int64_t, uint256> mapCacheBlockHashes;
 
+//Collateral Change Developed by barrystyle https://github.com/barrystyle
 CAmount GetMasternodeCollateral() { 
     if(IsSporkActive(SPORK_18_CHANGE_COLLATERAL_ENFORCEMENT)) {
         return Params().MasternodeCollateralNew();
