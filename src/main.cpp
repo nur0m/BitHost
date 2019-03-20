@@ -1136,6 +1136,7 @@ bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fReject
 		}
 	}
 
+	//Invalidate address Developed by TFinch https://github.com/MotoAcidic
 	// Check for duplicate inputs
 	set<COutPoint> vInOutPoints;
 	set<CBigNum> vZerocoinSpendSerials;
